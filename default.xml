@@ -10,7 +10,7 @@
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="platform/build" groups="pdk" >
+  <project path="build" name="TeamJB/platform_build" groups="pdk" remote="github" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -430,5 +430,12 @@
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
+
+  <!-- Custom repos -->
+  <project name="TeamJB/device_htc_m7-common" path="device/htc/m7-common" remote="github" />
+  <project name="TeamJB/device_htc_m7spr" path="device/htc/m7spr" remote="github" />
+  <project name="TeamJB/device_htc_msm8960-common" path="device/htc/msm8960-common" remote="github" />
+  <project name="TeamJB/kernel_htc_m7" path="kernel/htc/m7" remote="github" />
+  <project name="TeamJB/vendor_htc" path="vendor/htc" remote="github" />
 
 </manifest>
